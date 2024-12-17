@@ -21,7 +21,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
+      DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/postgres
   frontend:
     build:
       context: ./lg_hak_front
